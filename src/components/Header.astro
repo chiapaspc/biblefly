@@ -1,11 +1,13 @@
 ---
 import ThemeToggle from './ThemeToggle.astro';
+import { getNavItems, type NavItem } from '../lib/pages';
 
-const links = [
-  { href: '/', label: 'Inicio' },
-  { href: '/blog/', label: 'Blog' },
-  { href: '/about/', label: 'Sobre nosotros'},
+const baseLinks: NavItem[] = [
+  { href: '/', label: 'Inicio', order: 0 },
+  { href: '/blog/', label: 'Blog', order: 1 },
 ];
+const pageLinks = await getNavItems();
+const links = [...baseLinks, ...pageLinks].sort((a, b) => a.order - b.order);
 
 const current = Astro.url.pathname;
 const isActive = (href: string) =>
