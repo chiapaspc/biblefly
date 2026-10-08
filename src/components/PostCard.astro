@@ -1,0 +1,25 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import FormattedDate from './FormattedDate.astro';
+import TagList from './TagList.astro';
+
+interface Props {
+  post: CollectionEntry<'blog'>;
+}
+
+const { post } = Astro.props;
+const { title, description, pubDate, tags } = post.data;
+---
+
+<article
+  class="flex flex-col rounded-lg border border-line bg-neutral p-5 transition-colors hover:border-secondary/40"
+>
+  <h2 class="font-display text-[18px] font-normal leading-[22px]">
+    <a href={`/blog/${post.id}/`} class="text-primary hover:text-accent">{title}</a>
+  </h2>
+  <p class="mt-2 flex-1 text-[14px] leading-5 text-secondary">{description}</p>
+  <div class="mt-4 flex flex-wrap items-center justify-between gap-3">
+    <FormattedDate date={pubDate} />
+    <TagList tags={tags} />
+  </div>
+</article>

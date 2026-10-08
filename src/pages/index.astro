@@ -1,17 +1,38 @@
 ---
-import { getCollection } from 'astro:content';
 import Layout from '../layouts/Layout.astro';
+import PostCard from '../components/PostCard.astro';
+import { getAllPosts } from '../lib/posts';
 
-const posts = await getCollection('blog');
+const posts = await getAllPosts();
 ---
-<Layout title="BibleFly Blog">
-  <h1>Últimos artículos</h1>
-  <ul>
-    {posts.map((post) => (
-      <li>
-        <a href={`/blog/${post.id}/`}>{post.data.title}</a>
-        <p>{post.data.description}</p>
-      </li>
-    ))}
-  </ul>
+
+<Layout
+  title="BibleFly"
+  description="Lecturas bíblicas, devocionales y reflexiones de fe para acompañar tu tiempo con la Palabra."
+>
+  <section class="mx-auto max-w-3xl px-6 pt-16 pb-12 text-center">
+    <h1 class="font-display text-[32px] leading-[38px] font-bold text-primary">
+      BibleFly
+    </h1>
+    <p class="mt-4 text-[16px] leading-[24px] text-secondary">
+      Lecturas bíblicas, devocionales y reflexiones para acompañar tu tiempo con
+      la Palabra.
+    </p>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-6 pb-16">
+    {
+      posts.length === 0 ? (
+        <p class="text-center text-secondary">
+          Todavía no hay publicaciones. Vuelve pronto.
+        </p>
+      ) : (
+        <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {posts.map((post) => (
+            <PostCard post={post} />
+          ))}
+        </div>
+      )
+    }
+  </section>
 </Layout>
