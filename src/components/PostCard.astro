@@ -12,7 +12,7 @@ const { title, description, pubDate, tags } = post.data;
 ---
 
 <article
-  class="flex flex-col rounded-lg border border-line bg-neutral p-5 transition-colors hover:border-secondary/40"
+  class="flex flex-col rounded-lg border border-line bg-neutral p-4 transition-colors hover:border-secondary/40 sm:p-5"
 >
   <h2 class="font-display text-[18px] font-normal leading-[22px]">
     <a href={`/blog/${post.id}/`} class="text-primary hover:text-accent">{title}</a>

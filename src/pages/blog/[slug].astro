@@ -23,11 +23,11 @@ const { title, description, pubDate, tags } = post.data;
   article
   pubDate={pubDate}
 >
-  <article class="mx-auto max-w-2xl px-6 py-12">
+  <article class="mx-auto max-w-2xl px-6 py-10 sm:py-12">
     <header>
       {tags.length > 0 && <TagList tags={tags} />}
       <h1
-        class="mt-4 font-display text-[32px] leading-[38px] font-bold text-primary"
+        class="mt-4 font-display text-[28px] leading-[34px] font-bold text-primary sm:text-[32px] sm:leading-[38px]"
       >
         {title}
       </h1>

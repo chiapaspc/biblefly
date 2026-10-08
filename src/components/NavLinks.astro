@@ -1,0 +1,44 @@
+---
+import { getNavItems, type NavItem } from '../lib/pages';
+
+interface Props {
+  listClass?: string;
+  linkClass?: string;
+}
+
+const baseLinks: NavItem[] = [
+  { href: '/', label: 'Inicio', order: 0 },
+  { href: '/blog/', label: 'Blog', order: 1 },
+];
+const pageLinks = await getNavItems();
+const links = [...baseLinks, ...pageLinks].sort((a, b) => a.order - b.order);
+
+const current = Astro.url.pathname;
+const isActive = (href: string) =>
+  href === '/' ? current === '/' : current.startsWith(href);
+
+const {
+  listClass = 'hidden items-center gap-6 md:flex',
+  linkClass = 'text-[15px] font-semibold',
+} = Astro.props;
+---
+
+<ul class={listClass}>
+  {
+    links.map((link) => (
+      <li>
+        <a
+          href={link.href}
+          class:list={[
+            linkClass,
+            isActive(link.href)
+              ? 'text-primary'
+              : 'text-secondary hover:text-primary',
+          ]}
+        >
+          {link.label}
+        </a>
+      </li>
+    ))
+  }
+</ul>
