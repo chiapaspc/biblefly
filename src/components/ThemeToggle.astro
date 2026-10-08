@@ -42,6 +42,7 @@
       var isDark = root.getAttribute('data-theme') === 'dark';
       var next = isDark ? 'light' : 'dark';
       root.setAttribute('data-theme', next);
+      root.setAttribute('data-pf-theme', next);
       try {
         localStorage.setItem('theme', next);
       } catch (e) {}

@@ -88,7 +88,7 @@
   --tw-prose-td-borders: var(--color-line);
 }
 
-:root {
+:root[data-theme='light'] {
   --pf-background: #ffffff;
   --pf-text: #222222;
   --pf-text-secondary: #857672;
@@ -110,7 +110,7 @@
   --pf-modal-backdrop: rgba(0, 0, 0, 0.5);
 }
 
-[data-theme='dark'] {
+:root[data-theme='dark'] {
   --pf-background: #211c1f;
   --pf-text: #f3edef;
   --pf-text-secondary: #a99a9e;

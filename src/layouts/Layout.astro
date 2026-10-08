@@ -46,7 +46,9 @@ const pageTitle = title === 'BibleFly' ? title : `${title} · BibleFly`;
           var dark = stored
             ? stored === 'dark'
             : window.matchMedia('(prefers-color-scheme: dark)').matches;
-          if (dark) document.documentElement.setAttribute('data-theme', 'dark');
+          var theme = dark ? 'dark' : 'light';
+          document.documentElement.setAttribute('data-theme', theme);
+          document.documentElement.setAttribute('data-pf-theme', theme);
         } catch (e) {}
       })();
     </script>
