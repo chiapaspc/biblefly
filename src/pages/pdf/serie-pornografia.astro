@@ -1,0 +1,305 @@
+---
+import { getCollection } from 'astro:content';
+
+const slugs = [
+  'pornografia-1-enemigo-silencioso',
+  'pornografia-2-lo-que-la-biblia-dice',
+  'pornografia-3-fuerza-de-voluntad',
+  'pornografia-4-camino-a-la-libertad',
+  'pornografia-5-gracia-que-restaura',
+];
+
+const posts = await getCollection('blog');
+const serie = slugs
+  .map((slug) => posts.find((p) => p.id === slug))
+  .filter(Boolean);
+
+const articulos = await Promise.all(
+  serie.map(async (post) => {
+    const { Content } = await post!.render();
+    return { data: post!.data, Content };
+  })
+);
+---
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La pornografía y el hombre cristiano — Serie completa | BibleFly</title>
+  <meta name="description" content="Serie completa en cinco partes sobre la pornografía y el hombre cristiano. Descargada desde biblefly.app" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: 11.5pt;
+      line-height: 1.7;
+      color: #222;
+      background: #f5f5f5;
+      padding: 2rem 1rem;
+    }
+
+    .portada {
+      max-width: 800px;
+      margin: 0 auto 2rem;
+      padding: 3rem 2rem;
+      background: #fff;
+      text-align: center;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    .portada h1 {
+      font-size: 2rem;
+      line-height: 1.2;
+      margin-bottom: 0.75rem;
+      color: #111;
+    }
+
+    .portada .subtitulo {
+      font-size: 1.1rem;
+      color: #555;
+      margin-bottom: 2rem;
+      font-style: italic;
+    }
+
+    .portada .marca {
+      font-family: system-ui, -apple-system, sans-serif;
+      font-size: 0.9rem;
+      color: #666;
+      padding-top: 1.5rem;
+      border-top: 1px solid #eee;
+    }
+
+    .portada .marca strong {
+      color: #0066cc;
+    }
+
+    .acciones {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      margin-top: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      font-family: system-ui, -apple-system, sans-serif;
+      font-size: 0.95rem;
+      padding: 0.75rem 1.5rem;
+      border-radius: 6px;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      transition: opacity 0.15s ease;
+    }
+
+    .btn:hover {
+      opacity: 0.85;
+    }
+
+    .btn-primario {
+      background: #0066cc;
+      color: #fff;
+    }
+
+    .btn-secundario {
+      background: #f0f0f0;
+      color: #333;
+    }
+
+    .contenido {
+      max-width: 800px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 3rem 2.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    .articulo {
+      page-break-after: always;
+      padding-bottom: 2rem;
+      margin-bottom: 2rem;
+      border-bottom: 1px solid #eee;
+    }
+
+    .articulo:last-child {
+      page-break-after: auto;
+      border-bottom: none;
+    }
+
+    .articulo h1 {
+      font-size: 1.6rem;
+      margin-bottom: 0.5rem;
+      color: #111;
+      line-height: 1.3;
+    }
+
+    .articulo h2 {
+      font-size: 1.25rem;
+      margin-top: 1.75rem;
+      margin-bottom: 0.75rem;
+      color: #111;
+    }
+
+    .articulo h3 {
+      font-size: 1.05rem;
+      margin-top: 1.25rem;
+      margin-bottom: 0.5rem;
+      color: #333;
+    }
+
+    .articulo p {
+      margin-bottom: 0.9rem;
+      text-align: justify;
+    }
+
+    .articulo ul,
+    .articulo ol {
+      margin: 0.75rem 0 1rem 1.5rem;
+    }
+
+    .articulo li {
+      margin-bottom: 0.4rem;
+    }
+
+    .articulo blockquote {
+      border-left: 3px solid #0066cc;
+      padding-left: 1rem;
+      margin: 1rem 0;
+      font-style: italic;
+      color: #444;
+    }
+
+    .articulo a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+
+    .articulo strong {
+      font-weight: bold;
+    }
+
+    .articulo hr {
+      border: none;
+      border-top: 1px solid #ddd;
+      margin: 1.5rem 0;
+    }
+
+    .pie-pagina {
+      text-align: center;
+      font-family: system-ui, -apple-system, sans-serif;
+      font-size: 0.85rem;
+      color: #888;
+      padding: 2rem 1rem 0;
+      margin-top: 2rem;
+      border-top: 1px solid #eee;
+    }
+
+    .pie-pagina a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+
+    /* Estilos para impresión */
+    @media print {
+      body {
+        background: #fff;
+        padding: 0;
+        font-size: 11pt;
+      }
+
+      .portada,
+      .contenido {
+        box-shadow: none;
+        border-radius: 0;
+        padding: 1.5cm 1.8cm;
+        max-width: none;
+        margin: 0;
+      }
+
+      .acciones {
+        display: none;
+      }
+
+      .articulo {
+        page-break-after: always;
+      }
+
+      .articulo h1 {
+        page-break-after: avoid;
+      }
+
+      .articulo h2,
+      .articulo h3 {
+        page-break-after: avoid;
+      }
+
+      .articulo blockquote,
+      .articulo pre {
+        page-break-inside: avoid;
+      }
+
+      @page {
+        margin: 1.5cm;
+        @bottom-center {
+          content: "biblefly.app";
+          font-size: 9pt;
+          color: #999;
+        }
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="portada">
+    <h1>La pornografía y el hombre cristiano</h1>
+    <p class="subtitulo">
+      Serie completa en cinco partes: verdad, gracia y libertad
+    </p>
+    <div class="acciones">
+      <button class="btn btn-primario" onclick="window.print()">
+        📄 Descargar como PDF
+      </button>
+      <a class="btn btn-secundario" href="/blog/pornografia-serie-completa/">
+        ← Volver a la serie
+      </a>
+    </div>
+    <p class="marca">
+      Contenido obtenido de <strong>biblefly.app</strong><br />
+      Cinco artículos sobre la pornografía y el hombre cristiano
+    </p>
+  </section>
+
+  <main class="contenido">
+    {articulos.map((art, index) => (
+      <article class="articulo">
+        <h1>{index + 1}. {art.data.title}</h1>
+        <art.Content />
+      </article>
+    ))}
+
+    <footer class="pie-pagina">
+      <p>
+        Este documento fue obtenido de
+        <a href="https://biblefly.app" target="_blank" rel="noopener">biblefly.app</a>
+      </p>
+      <p>
+        Serie completa: La pornografía y el hombre cristiano · © BibleFly 2026
+      </p>
+    </footer>
+  </main>
+
+  <script is:inline>
+    // Cerrar la pestaña no funciona siempre; el botón "Volver" es más fiable.
+    // El botón de imprimir usa window.print() que muestra el diálogo nativo.
+  </script>
+</body>
+</html>
