@@ -87,3 +87,44 @@
   --tw-prose-th-borders: var(--color-line);
   --tw-prose-td-borders: var(--color-line);
 }
+
+:root {
+  --pf-background: #ffffff;
+  --pf-text: #222222;
+  --pf-text-secondary: #857672;
+  --pf-text-muted: #857672;
+  --pf-border: #f2f2f2;
+  --pf-border-focus: #403438;
+  --pf-skeleton: #f2f2f2;
+  --pf-skeleton-shine: #f9f9f9;
+  --pf-hover: #f9f9f9;
+  --pf-mark: #403438;
+  --pf-scroll-shadow: rgba(0, 0, 0, 0.08);
+  --pf-shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
+  --pf-shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --pf-shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.2);
+  --pf-outline-focus: #403438;
+  --pf-font:
+    'Roboto', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --pf-border-radius: 6px;
+  --pf-modal-backdrop: rgba(0, 0, 0, 0.5);
+}
+
+[data-theme='dark'] {
+  --pf-background: #211c1f;
+  --pf-text: #f3edef;
+  --pf-text-secondary: #a99a9e;
+  --pf-text-muted: #a99a9e;
+  --pf-border: #332c30;
+  --pf-border-focus: #eadfe2;
+  --pf-skeleton: #332c30;
+  --pf-skeleton-shine: #2a2424;
+  --pf-hover: #2a2424;
+  --pf-mark: #eadfe2;
+  --pf-scroll-shadow: rgba(255, 255, 255, 0.1);
+  --pf-shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+  --pf-shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
+  --pf-shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.5);
+  --pf-outline-focus: #eadfe2;
+  --pf-modal-backdrop: rgba(0, 0, 0, 0.6);
+}
