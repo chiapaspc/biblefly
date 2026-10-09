@@ -1,7 +1,7 @@
 ---
 title: Acerca de BibleFly
 description: Un espacio para leer, estudiar y comprender la Biblia, libro por libro.
-nav: Sobre nosotros
+nav: Acerca de
 order: 20
 ---
 
@@ -47,7 +47,7 @@ Si buscas algo más práctico, empieza por la serie [La pornografía y el hombre
 
 ## Recursos del sitio
 
-- **Buscador**: encuentra artículos por palabra clave, libro o tema en [/buscar/](/buscar/).
+- **Buscador**: encuentra artículos por palabra clave, libro o tema usa Ctrl + K.
 - **RSS**: suscríbete al feed en [/rss.xml](/rss.xml) para recibir los artículos nuevos.
 - **PDFs descargables**: algunas series están disponibles en PDF para leer sin conexión. Busca el enlace al final de cada serie.
 
