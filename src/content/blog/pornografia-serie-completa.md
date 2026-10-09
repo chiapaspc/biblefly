@@ -86,7 +86,10 @@ El cierre de la serie. Después de todo lo anterior, la pregunta más profunda e
 
 Si quieres leer toda la serie sin interrupciones, o compartirla con alguien que lo necesite, puedes descargarla en PDF desde el siguiente enlace:
 
-**[Descargar PDF de la serie completa →](/pdf/serie-pornografia/)**
+**[Visualizar version imprimible de la serie completa →](/pdf/serie-pornografia/)**
+
+**[Descargar PDF →](/pdfs/serie-pornografia.pdf)**
+
 
 El PDF incluye los cinco artículos completos, con el texto íntegro y todos los pasajes bíblicos citados. Al pie de cada página encontrarás la referencia a **biblefly.app** para que quien lo reciba sepa de dónde viene.
 

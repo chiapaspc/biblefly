@@ -1,5 +1,5 @@
 ---
-import { getCollection } from 'astro:content';
+import { getCollection, render } from 'astro:content';
 
 const slugs = [
   'pornografia-1-enemigo-silencioso',
@@ -12,12 +12,12 @@ const slugs = [
 const posts = await getCollection('blog');
 const serie = slugs
   .map((slug) => posts.find((p) => p.id === slug))
-  .filter(Boolean);
+  .filter((p): p is NonNullable<typeof p> => Boolean(p));
 
 const articulos = await Promise.all(
   serie.map(async (post) => {
-    const { Content } = await post!.render();
-    return { data: post!.data, Content };
+    const { Content } = await render(post);
+    return { data: post.data, Content };
   })
 );
 ---
@@ -288,8 +288,8 @@ const articulos = await Promise.all(
 
     <footer class="pie-pagina">
       <p>
-        Este documento fue obtenido de
-        <a href="https://biblefly.app" target="_blank" rel="noopener">biblefly.app</a>
+        Este documento fue obtenido de 
+        <a href="https://biblefly.app" target="_blank" rel="noopener"> biblefly.app</a>
       </p>
       <p>
         Serie completa: La pornografía y el hombre cristiano · © BibleFly 2026
