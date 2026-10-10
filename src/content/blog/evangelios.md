@@ -189,7 +189,7 @@ Mi recomendación: empieza por **Marcos** para una visión rápida, luego **Juan
 
 Si quieres leer toda la serie sin interrupciones, o compartirla con alguien, puedes descargarla en PDF:
 
-**[Visualizar version imprimible de la serie completa →](/pdf/evangelios/)**
+**[Visualizar version imprimible de la serie completa →](/pdf/serie-evangelios/)**
 
 **[Descargar PDF →](/pdfs/serie-evangelios.pdf)**
 
