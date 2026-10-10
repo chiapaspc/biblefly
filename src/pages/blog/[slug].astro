@@ -3,6 +3,7 @@ import { getCollection, render } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
 import FormattedDate from '../../components/FormattedDate.astro';
 import TagList from '../../components/TagList.astro';
+import ShareLinks from '../../components/ShareLinks.astro';
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
@@ -32,8 +33,9 @@ const { title, description, pubDate, tags } = post.data;
         {title}
       </h1>
       <p class="mt-4 text-[16px] leading-[24px] text-secondary">{description}</p>
-      <div class="mt-4">
+      <div class="mt-4 flex flex-wrap items-center gap-x-3 gap-y-2">
         <FormattedDate date={pubDate} />
+        <ShareLinks title={title} />
       </div>
     </header>
 
