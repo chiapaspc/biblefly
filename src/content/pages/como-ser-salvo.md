@@ -1,6 +1,6 @@
 ---
 title: ¿Cómo ser salvo?
-description: Una guía clara y bíblica sobre la salvación: qué es, por qué la necesitamos, qué hizo Dios por nosotros y cómo recibirla.
+description: "Una guía clara y bíblica sobre la salvación: qué es, por qué la necesitamos, qué hizo Dios por nosotros y cómo recibirla."
 nav: ¿Cómo ser salvo?
 order: 5
 ---
