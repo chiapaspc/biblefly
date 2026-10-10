@@ -4,9 +4,6 @@ description: "Un recorrido completo por el libro de Números: censos, peregrinac
 pubDate: 2026-10-11
 tags: ["números", "antiguo testamento", "estudio bíblico", "pentateuco", "desierto"]
 ---
-
-# Números: el libro del desierto
-
 Números es el libro del **desierto**. Su nombre proviene de los dos censos que aparecen al principio y al final (capítulos 1 y 26), pero su verdadero tema es el viaje de una generación que salió de Egipto y **nunca llegó a la tierra prometida**. Es un libro de contrastes: la fidelidad de Dios frente a la infidelidad del pueblo, la promesa frente al juicio, la esperanza frente a la frustración.
 
 Es, quizás, el libro más humano del Pentateuco, porque retrata con crudeza la incredulidad, la queja y la rebeldía del pueblo de Dios. Y al mismo tiempo, es uno de los más esperanzadores, porque muestra que **Dios no abandona a su pueblo aunque su pueblo lo abandone a él**.

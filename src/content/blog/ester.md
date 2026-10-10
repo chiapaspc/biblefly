@@ -4,9 +4,6 @@ description: "Un recorrido completo por Ester: la historia de una joven judía q
 pubDate: 2026-10-23
 tags: ["ester", "antiguo testamento", "estudio bíblico", "libros históricos", "providencia"]
 ---
-
-# Ester: el libro de la providencia oculta
-
 Ester es el libro más extraño del Antiguo Testamento. **Dios no es mencionado ni una sola vez.** No hay milagros, no hay profetas, no hay ángeles, no hay oraciones explícitas. Es una historia de intriga palaciega, con un rey caprichoso, un villano cruel, una reina valiente y un pueblo al borde del exterminio.
 
 Y precisamente por eso es tan poderoso. Porque enseña que **Dios obra incluso cuando no lo vemos**. Que su providencia no necesita milagros espectaculares para cumplirse. Que puede usar decretos, banquetes, insomnios y coincidencias aparentemente triviales para salvar a su pueblo.

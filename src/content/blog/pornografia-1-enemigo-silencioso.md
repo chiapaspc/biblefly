@@ -4,9 +4,6 @@ description: "Primera parte de una serie sobre la pornografía y el hombre crist
 pubDate: 2026-10-25
 tags: ["pornografía", "pureza", "hombre cristiano", "serie", "santidad"]
 ---
-
-# El enemigo silencioso: la pornografía y el hombre cristiano
-
 Hay un tema del que casi nadie habla en la iglesia. No aparece en los sermones del domingo. No se menciona en los estudios bíblicos. No se enseña en la escuela dominical. Y sin embargo, está presente en la vida de una gran parte de los hombres cristianos. Se sienta en las bancas, canta las alabanzas, levanta las manos en adoración, sirve en el ministerio. Y en secreto, muchas veces en la soledad de su habitación, lucha contra algo que lo tiene atrapado.
 
 Ese tema es la pornografía.

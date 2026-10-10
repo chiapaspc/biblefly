@@ -4,9 +4,6 @@ description: "Un recorrido completo por el libro de Jueces: el ciclo de pecado, 
 pubDate: 2026-10-15
 tags: ["jueces", "antiguo testamento", "estudio bíblico", "libros históricos", "apostasía"]
 ---
-
-# Jueces: el libro de la apostasía y la liberación
-
 Si Josué es el libro de la **fidelidad cumplida**, Jueces es el libro de la **fidelidad olvidada**. Narra el período más oscuro y caótico de la historia de Israel antes de la monarquía: una época en la que cada generación se apartaba de Dios, caía en la opresión de sus enemigos, clamaba por ayuda y era liberada por un juez levantado por Dios. Una y otra vez. En un ciclo que se repite con una triste regularidad.
 
 El libro termina con una de las frases más desoladoras de toda la Biblia: *"En aquellos días no había rey en Israel; cada uno hacía lo que bien le parecía"* (21:25). Es el retrato de una sociedad sin autoridad, sin rumbo y sin Dios.

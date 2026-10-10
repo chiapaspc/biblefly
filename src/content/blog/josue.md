@@ -4,9 +4,6 @@ description: "Un recorrido completo por el libro de Josué: la entrada a la tier
 pubDate: 2026-10-14
 tags: ["josué", "antiguo testamento", "estudio bíblico", "libros históricos", "conquista"]
 ---
-
-# Josué: el libro de la conquista
-
 Josué es el libro de la **fidelidad cumplida**. Después de cuarenta años de peregrinación por el desierto, Dios finalmente introduce a su pueblo en la tierra que prometió a Abraham, Isaac y Jacob. Es el libro del **paso de la promesa a la posesión**, del desierto a la heredad, de la espera al cumplimiento.
 
 Su nombre proviene de **Josué**, el sucesor de Moisés, cuyo nombre en hebreo (Yehoshúa) significa "Yahvé salva" — el mismo nombre que luego llevaría Jesús en su forma griega. Y no es casualidad: Josué es un **tipo de Cristo**, el líder que lleva al pueblo de Dios a la herencia prometida.

@@ -4,9 +4,6 @@ description: "Un recorrido completo por Esdras y Nehemías: el retorno del exili
 pubDate: 2026-10-22
 tags: ["esdras", "nehemías", "antiguo testamento", "estudio bíblico", "libros históricos", "exilio", "retorno"]
 ---
-
-# Esdras y Nehemías: el retorno y la reconstrucción
-
 Después de la caída de Jerusalén y el exilio en Babilonia, la historia de Israel parecía terminada. El templo estaba destruido, la ciudad en ruinas, el pueblo deportado. Pero Dios no había abandonado su pacto. **Esdras y Nehemías** narran el regreso del exilio, la reconstrucción del templo y los muros de Jerusalén, y la reforma espiritual de un pueblo que necesitaba volver a sus raíces.
 
 Originalmente, estos dos libros eran **uno solo**, junto con Crónicas. La separación es posterior, pero la unidad es evidente: ambos narran el mismo período, desde dos perspectivas complementarias. **Esdras** se enfoca en la reconstrucción del templo y la reforma religiosa; **Nehemías** se enfoca en la reconstrucción de los muros y la reforma social.

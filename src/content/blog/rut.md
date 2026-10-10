@@ -4,9 +4,6 @@ description: "Un recorrido completo por el libro de Rut: la historia de una moab
 pubDate: 2026-10-16
 tags: ["rut", "antiguo testamento", "estudio bíblico", "libros históricos", "redención"]
 ---
-
-# Rut: el libro de la redención y la providencia
-
 Después de la oscuridad de Jueces, Rut es un **rayo de luz**. Es un libro corto —solo cuatro capítulos— pero contiene una de las historias más hermosas de toda la Biblia. No hay milagros espectaculares, no hay guerras, no hay ángeles. Solo una familia, una viuda, una extranjera y un hombre justo. Y sin embargo, en esa aparente normalidad, Dios está obrando de manera profunda.
 
 Rut es el libro de la **providencia silenciosa**. Muestra cómo Dios dirige la historia a través de decisiones cotidianas, de actos de bondad, de coincidencias que no son coincidencias. Y termina con una genealogía que conecta a una moabita con el rey David… y con Jesucristo.

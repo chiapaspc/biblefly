@@ -4,9 +4,6 @@ description: "Un recorrido completo por el libro de Levítico: sacrificios, sace
 pubDate: 2026-10-10
 tags: ["levítico", "antiguo testamento", "estudio bíblico", "pentateuco", "santidad"]
 ---
-
-# Levítico: el libro de la santidad
-
 Levítico es, probablemente, el libro más incomprendido del Antiguo Testamento. A primera vista parece una colección de leyes antiguas sobre sacrificios, pureza ritual y normas ceremoniales que no tienen nada que ver con nuestra vida moderna. Sin embargo, es uno de los libros más importantes de la Biblia, porque responde a una pregunta fundamental: **¿cómo puede un pueblo pecador vivir en la presencia de un Dios santo?**
 
 Su nombre proviene de los **levitas**, la tribu sacerdotal encargada del culto. Pero su tema central no es el sacerdocio en sí, sino la **santidad**: la manera en que Dios prepara a su pueblo para estar cerca de él.

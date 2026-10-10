@@ -4,9 +4,6 @@ description: "Un recorrido completo por 1 y 2 Crónicas: la historia desde Adán
 pubDate: 2026-10-21
 tags: ["crónicas", "antiguo testamento", "estudio bíblico", "libros históricos", "templo", "david"]
 ---
-
-# Crónicas: el libro del templo y la adoración
-
 Si Samuel y Reyes cuentan la historia de Israel desde una perspectiva **profética** —denunciando el pecado de los reyes y anunciando el juicio—, Crónicas cuenta la misma historia desde una perspectiva **sacerdotal**. Su centro no es el trono, sino el **templo**. Su interés no es la política, sino la **adoración**. Y su propósito no es solo recordar el pasado, sino **animar a una comunidad que regresa del exilio** a reconstruir su vida en torno a Dios.
 
 Es un libro escrito para un pueblo que acaba de volver de Babilonia y necesita recordar quién es, de dónde viene y qué debe hacer ahora. Y por eso, aunque repita mucho, **no es redundante**: es una relectura con un enfoque distinto.

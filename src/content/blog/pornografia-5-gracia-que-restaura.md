@@ -4,9 +4,6 @@ description: "Quinta y última parte de la serie sobre la pornografía y el homb
 pubDate: 2026-10-29
 tags: ["pornografía", "pureza", "hombre cristiano", "serie", "santidad", "gracia", "evangelio"]
 ---
-
-# La gracia que restaura: el evangelio para el que ha caído
-
 Hemos llegado al final de la serie. Hemos visto la realidad del problema, el fundamento bíblico, por qué la fuerza de voluntad no funciona, y los pasos prácticos hacia la libertad. Pero ninguna de esas cosas funciona si no está anclada en **la gracia**.
 
 Porque al final del día, la pregunta no es solo "¿cómo dejo de ver pornografía?". La pregunta más profunda es: **"¿Cómo vivo en la presencia de un Dios santo cuando sigo fallando?"**. Y esa pregunta solo tiene una respuesta: **el evangelio**.

@@ -4,9 +4,6 @@ description: "Un recorrido completo por 2 Reyes: el ministerio de Eliseo, la ca�
 pubDate: 2026-10-20
 tags: ["2 reyes", "antiguo testamento", "estudio bíblico", "libros históricos", "eliseo", "exilio"]
 ---
-
-# 2 Reyes: el libro del exilio
-
 2 Reyes es el libro más triste del Antiguo Testamento. Narra el **colapso final** de los dos reinos: Israel (el norte) cae ante Asiria en el 722 a.C., y Judá (el sur) cae ante Babilonia en el 586 a.C. Es el cumplimiento de todas las advertencias que Dios había dado desde Deuteronomio: si el pueblo persistía en la idolatría, sería expulsado de la tierra.
 
 Pero en medio del juicio, brillan dos figuras: **Eliseo**, el profeta que hereda el manto de Elías, y los reyes reformadores **Ezequías** y **Josías**, que intentan devolver a Judá a Dios. Aunque sus esfuerzos retrasan el juicio, no lo evitan. El libro termina con Jerusalén en llamas, el templo destruido y el pueblo llevado al exilio.

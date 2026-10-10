@@ -4,9 +4,6 @@ description: "Un recorrido completo por 1 Samuel: el nacimiento de Samuel, la de
 pubDate: 2026-10-17
 tags: ["1 samuel", "antiguo testamento", "estudio bíblico", "libros históricos", "david", "saúl"]
 ---
-
-# 1 Samuel: el libro de la monarquía
-
 1 Samuel es el libro de la **transición**. Narra el paso de Israel de una confederación de tribus gobernadas por jueces a una **monarquía centralizada** con un rey. Es un período crucial, lleno de tensiones, y en él aparecen tres figuras gigantes: **Samuel**, el último juez y primer profeta de la nueva era; **Saúl**, el primer rey, trágicamente fallido; y **David**, el rey conforme al corazón de Dios, que aún no reina pero ya está ungido.
 
 Es un libro sobre **el liderazgo**, sobre la **obediencia** y sobre cómo Dios **elige a los improbables** para llevar a cabo sus propósitos.

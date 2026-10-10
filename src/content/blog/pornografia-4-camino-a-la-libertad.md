@@ -4,9 +4,6 @@ description: "Cuarta parte de la serie sobre la pornografía y el hombre cristia
 pubDate: 2026-10-28
 tags: ["pornografía", "pureza", "hombre cristiano", "serie", "santidad", "libertad"]
 ---
-
-# Camino a la libertad: pasos prácticos para salir del ciclo
-
 Hasta aquí hemos visto la realidad del problema (post 1), el fundamento bíblico (post 2) y por qué la fuerza de voluntad no funciona (post 3). Ahora toca lo más importante: **¿qué hago?**
 
 Este artículo es el más práctico de la serie. No voy a darte una fórmula mágica ni una lista de reglas que, si las cumples, te garantizan la victoria. La santidad no funciona así. Pero sí voy a darte **pasos concretos, bíblicos y probados** que, unidos a la gracia de Dios, pueden llevarte hacia la libertad.

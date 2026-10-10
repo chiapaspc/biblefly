@@ -4,9 +4,6 @@ description: "Guía completa en cinco partes sobre la pornografía y el hombre c
 pubDate: 2026-10-30
 tags: ["pornografía", "pureza", "hombre cristiano", "serie", "santidad", "gracia", "evangelio", "libertad"]
 ---
-
-# Serie completa: la pornografía y el hombre cristiano
-
 La pornografía es uno de los problemas más extendidos y menos hablados dentro de la iglesia. Afecta a millones de hombres cristianos, daña matrimonios, debilita ministerios y cauteriza conciencias. Pero rara vez se aborda desde el púlpito con la profundidad y la gracia que merece.
 
 Esta serie de cinco artículos busca llenar ese vacío. No desde el juicio, sino desde la verdad. No desde el moralismo, sino desde el evangelio. No desde la condenación, sino desde la esperanza.

@@ -4,9 +4,6 @@ description: "Un recorrido completo por 2 Samuel: la consolidación del reino, e
 pubDate: 2026-10-18
 tags: ["2 samuel", "antiguo testamento", "estudio bíblico", "libros históricos", "david"]
 ---
-
-# 2 Samuel: el reinado de David
-
 Si 1 Samuel termina con la muerte de Saúl y el ascenso de David, 2 Samuel narra **el reinado de David en toda su complejidad**. Es un libro de contrastes: la gloria de un rey que unifica Israel, conquista Jerusalén y recibe una promesa eterna; y la tragedia de un hombre que cae en adulterio y asesinato, y que ve cómo su propia familia se desgarra en violencia y rebelión.
 
 2 Samuel no endulza a David. Lo muestra como es: **un hombre conforme al corazón de Dios, pero profundamente pecador**. Y precisamente por eso es un libro tan valioso: enseña que la gracia de Dios no elimina las consecuencias del pecado, pero tampoco abandona al pecador arrepentido.

@@ -5,8 +5,6 @@ pubDate: 2026-10-08
 tags: ["génesis", "antiguo testamento", "estudio bíblico", "pentateuco"]
 ---
 
-# Génesis: el libro de los comienzos
-
 Génesis es el primer libro de la Biblia y, sin exagerar, uno de los más influyentes de toda la literatura universal. Su nombre proviene del griego *génesis*, que significa "origen" o "comienzo". Y eso es exactamente lo que hace: narrar los orígenes del mundo, de la humanidad, del pecado, del pueblo de Dios y de la promesa de redención.
 
 ## Autoría y fecha

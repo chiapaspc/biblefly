@@ -6,7 +6,7 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://biblefly.com',
+  site: 'https://biblefly.app',
   integrations: [sitemap(), pagefind({ indexConfig: { forceLanguage: 'es' } })],
   vite: {
     plugins: [tailwindcss()],

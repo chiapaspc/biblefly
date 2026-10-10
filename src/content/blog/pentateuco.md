@@ -4,9 +4,6 @@ description: "Guía completa del Pentateuco: qué es, quién lo escribió, su es
 pubDate: 2026-10-13
 tags: ["pentateuco", "antiguo testamento", "estudio bíblico", "moisés", "torá"]
 ---
-
-# El Pentateuco: los cinco libros de Moisés
-
 El Pentateuco es el **fundamento de toda la Biblia**. Sus cinco libros —Génesis, Éxodo, Levítico, Números y Deuteronomio— no son solo el comienzo cronológico de las Escrituras: son la base sobre la que se construye todo lo demás. Sin ellos, no se entiende ni el Antiguo ni el Nuevo Testamento.
 
 En este artículo te doy una visión completa: qué es el Pentateuco, quién lo escribió, cuál es su estructura y cuáles son sus grandes temas. Al final encontrarás los enlaces a los cinco artículos individuales que ya publiqué sobre cada libro.

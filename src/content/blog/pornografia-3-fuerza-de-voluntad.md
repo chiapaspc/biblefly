@@ -4,9 +4,6 @@ description: "Tercera parte de la serie sobre la pornografía y el hombre cristi
 pubDate: 2026-10-27
 tags: ["pornografía", "pureza", "hombre cristiano", "serie", "santidad", "gracia"]
 ---
-
-# Por qué la fuerza de voluntad no funciona
-
 Si has luchado contra la pornografía durante algún tiempo, probablemente conoces este ciclo de memoria:
 
 1. Caes.

@@ -5,8 +5,6 @@ pubDate: 2026-10-26
 tags: ["pornografía", "pureza", "hombre cristiano", "serie", "santidad", "lujuria"]
 ---
 
-# Lo que la Biblia realmente dice sobre la pureza y el deseo
-
 Antes de hablar de estrategias, hábitos o rendición de cuentas, necesitamos sentar el fundamento. Porque si no entendemos lo que la Biblia dice sobre el deseo, la lujuria y la sexualidad, cualquier intento de salir de la pornografía será un parche, no una transformación.
 
 Y aquí hay una buena noticia desde el principio: **la Biblia no es anti-sexualidad**. Muchos hombres cristianos crecen con la idea de que el sexo es algo sucio, que el deseo es pecaminoso y que la única postura espiritual es la represión. Eso no es bíblico. Es una distorsión.

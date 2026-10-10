@@ -4,9 +4,6 @@ description: "Guía completa de los Libros Históricos de la Biblia: qué son, s
 pubDate: 2026-10-24
 tags: ["libros históricos", "antiguo testamento", "estudio bíblico", "josué", "reyes", "exilio"]
 ---
-
-# Los Libros Históricos: la historia de Israel en la tierra prometida
-
 Después del Pentateuco, la Biblia continúa con un bloque de **doce libros históricos** que narran la vida de Israel en la tierra prometida: desde la conquista de Canaán hasta el retorno del exilio. Es un período de aproximadamente **mil años**, lleno de victorias y derrotas, de reyes fieles y reyes idólatras, de fidelidad divina y rebelión humana.
 
 Estos libros no son solo crónicas antiguas. Son **teología en forma de historia**. Cada episodio, cada personaje, cada giro narrativo, enseña algo sobre Dios, sobre el ser humano y sobre el propósito de la salvación. Y en conjunto, trazan una línea que conduce directamente a Cristo.

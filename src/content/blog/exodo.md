@@ -4,9 +4,6 @@ description: "Un recorrido completo por el libro de Éxodo: autoría, estructura
 pubDate: 2026-10-09
 tags: ["éxodo", "antiguo testamento", "estudio bíblico", "pentateuco", "moisés"]
 ---
-
-# Éxodo: el libro de la redención
-
 Si Génesis es el libro de los comienzos, Éxodo es el libro de la **redención**. Su nombre en griego significa "salida" o "partida", y resume el evento central que narra: la liberación del pueblo de Israel de la esclavitud en Egipto. Pero Éxodo es mucho más que una historia de escape; es el relato fundacional de la identidad de Israel como pueblo de Dios, y el molde de toda la historia de salvación que culmina en Cristo.
 
 ## Autoría y fecha

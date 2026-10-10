@@ -4,9 +4,6 @@ description: "Un recorrido completo por Deuteronomio: los discursos finales de M
 pubDate: 2026-10-12
 tags: ["deuteronomio", "antiguo testamento", "estudio bíblico", "pentateuco", "pacto"]
 ---
-
-# Deuteronomio: el libro de la renovación
-
 Deuteronomio es el **testamento espiritual de Moisés**. Su nombre proviene del griego *deuteronomion*, que significa "segunda ley", pero no porque sea una repetición de lo anterior, sino porque es una **renovación del pacto** para una nueva generación. La generación que salió de Egipto murió en el desierto. Ahora, a las puertas de la tierra prometida, Moisés reúne al pueblo y le recuerda quién es Dios, qué ha hecho y qué espera de ellos.
 
 Es un libro de **despedida, memoria y compromiso**. Y también uno de los más citados por Jesús, quien lo usó tres veces para vencer la tentación en el desierto (Mateo 4:1-11).
