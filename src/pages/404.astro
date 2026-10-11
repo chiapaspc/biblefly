@@ -1,0 +1,79 @@
+---
+import Layout from '../layouts/Layout.astro';
+import verses from '../data/verses.json';
+
+const initial = verses[Math.floor(Math.random() * verses.length)];
+const versesJson = JSON.stringify(verses);
+---
+
+<Layout
+  title="Página no encontrada"
+  description="La página que buscas no existe o fue movida."
+  noindex
+>
+  <section
+    class="mx-auto flex max-w-2xl flex-col items-center px-6 py-16 text-center sm:py-24"
+    data-pagefind-ignore
+  >
+    <h1
+      class="font-display text-[48px] leading-none font-bold text-primary sm:text-[64px]"
+    >
+      404
+    </h1>
+    <p class="mt-6 text-[16px] leading-[24px] text-secondary">
+      La página que buscas no existe o fue movida.
+    </p>
+
+    <blockquote
+      id="verse"
+      data-verses={versesJson}
+      class="mt-10 w-full max-w-xl rounded-lg border border-line bg-surface px-6 py-6"
+    >
+      <p id="verse-text" class="text-[16px] leading-[24px] text-on-surface">
+        {initial.text}
+      </p>
+      <footer
+        id="verse-ref"
+        class="mt-3 text-[13px] leading-4 font-medium text-secondary"
+      >
+        {initial.ref}
+      </footer>
+    </blockquote>
+
+    <div class="mt-10 flex flex-wrap items-center justify-center gap-3">
+      <a
+        href="/"
+        class="inline-flex h-[45px] items-center justify-center rounded-md bg-primary px-6 text-[15px] font-medium text-neutral transition-colors hover:bg-accent"
+      >
+        Ir al inicio
+      </a>
+      <a
+        href="/blog/"
+        class="inline-flex h-[45px] items-center justify-center rounded-md border border-line bg-surface px-6 text-[15px] font-medium text-on-surface transition-colors hover:bg-tertiary"
+      >
+        Ver el blog
+      </a>
+    </div>
+  </section>
+
+  <script is:inline>
+    (function () {
+      document.addEventListener('DOMContentLoaded', function () {
+        var box = document.getElementById('verse');
+        if (!box) return;
+        var verses;
+        try {
+          verses = JSON.parse(box.getAttribute('data-verses') || '[]');
+        } catch (e) {
+          return;
+        }
+        if (!verses.length) return;
+        var pick = verses[Math.floor(Math.random() * verses.length)];
+        var textEl = document.getElementById('verse-text');
+        var refEl = document.getElementById('verse-ref');
+        if (textEl) textEl.textContent = pick.text;
+        if (refEl) refEl.textContent = pick.ref;
+      });
+    })();
+  </script>
+</Layout>
