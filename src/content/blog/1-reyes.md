@@ -1,7 +1,7 @@
 ---
 title: "1 Reyes: el libro de la división"
 description: "Un recorrido completo por 1 Reyes: el reinado de Salomón, la construcción del templo, la división del reino, y el ministerio profético de Elías."
-pubDate: 2026-10-19
+pubDate: 2026-10-18
 tags: ["1 reyes", "antiguo testamento", "estudio bíblico", "libros históricos", "salomón", "elías"]
 ---
 1 Reyes es el libro de la **gloria y la ruina**. Comienza con el reinado más espléndido de la historia de Israel —el de Salomón, el rey sabio que construyó el templo— y termina con un reino dividido, gobernado por reyes idólatras, y con un profeta solitario enfrentándose a un sistema corrupto. Es un libro de contrastes extremos: de la sabiduría a la necedad, de la unidad a la división, de la presencia de Dios en el templo a la apostasía nacional.
