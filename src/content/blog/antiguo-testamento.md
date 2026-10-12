@@ -230,13 +230,6 @@ Si nunca has leído el AT, aquí tienes una guía sencilla:
 
 Y sobre todo: **léelo con Cristo en mente**. El AT no es un libro antiguo sin relevancia; es la historia de la redención que culmina en Jesús.
 
-## Descargar el Antiguo Testamento completo en PDF
-
-Si quieres leer toda la serie del AT sin interrupciones, puedes descargarla en PDF:
-
-**[Descargar PDF del Antiguo Testamento →](/pdf/antiguo-testamento/)**
-
-El PDF incluye todos los artículos de los cinco bloques, con el texto íntegro. Al pie de cada página encontrarás la referencia a **biblefly.app** para que quien lo reciba sepa de dónde viene.
 
 ## Una palabra final
 
