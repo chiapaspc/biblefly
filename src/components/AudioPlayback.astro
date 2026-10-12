@@ -1,0 +1,291 @@
+---
+---
+
+<div
+  class="mt-6 flex flex-wrap items-center gap-2"
+  data-reader
+  data-reader-content="post-content"
+  data-pagefind-ignore
+  hidden
+>
+  <button
+    type="button"
+    data-reader-toggle
+    aria-label="Escuchar artículo"
+    class="inline-flex h-[40px] items-center gap-2 rounded-full bg-primary px-5 text-[15px] font-medium text-neutral transition-colors hover:bg-accent"
+  >
+    <svg
+      data-reader-icon-play
+      class="size-4"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      aria-hidden="true"
+    >
+      <path d="M8 5v14l11-7z"></path>
+    </svg>
+    <svg
+      data-reader-icon-pause
+      class="size-4"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      aria-hidden="true"
+      hidden
+    >
+      <path d="M6 5h4v14H6zM14 5h4v14h-4z"></path>
+    </svg>
+    <span data-reader-toggle-label>Escuchar</span>
+  </button>
+
+  <button
+    type="button"
+    data-reader-stop
+    aria-label="Detener"
+    class="inline-flex h-[40px] items-center gap-2 rounded-full border border-line bg-surface px-5 text-[15px] font-medium text-on-surface transition-colors hover:bg-tertiary"
+    hidden
+  >
+    <svg
+      class="size-4"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      aria-hidden="true"
+    >
+      <path d="M6 6h12v12H6z"></path>
+    </svg>
+    Detener
+  </button>
+
+  <label
+    class="inline-flex h-[40px] items-center gap-2 rounded-full border border-line bg-surface px-4 text-[13px] text-secondary"
+    data-reader-speed
+    hidden
+  >
+    Velocidad
+    <select
+      data-reader-speed-select
+      class="bg-transparent text-[13px] font-medium text-on-surface focus:outline-none"
+      aria-label="Velocidad de lectura"
+    >
+      <option value="0.5">0.5×</option>
+      <option value="0.75">0.75×</option>
+      <option value="1" selected>1×</option>
+      <option value="1.25">1.25×</option>
+      <option value="1.5">1.5×</option>
+      <option value="2">2×</option>
+    </select>
+  </label>
+
+  <span
+    data-reader-status
+    class="text-[13px] text-secondary"
+    aria-live="polite"
+  ></span>
+</div>
+
+<script is:inline>
+  (function () {
+    if (!('speechSynthesis' in window)) return;
+
+    var root = document.querySelector('[data-reader]');
+    var content = document.getElementById(root.getAttribute('data-reader-content'));
+    if (!root || !content) return;
+
+    var toggle = root.querySelector('[data-reader-toggle]');
+    var toggleLabel = root.querySelector('[data-reader-toggle-label]');
+    var iconPlay = root.querySelector('[data-reader-icon-play]');
+    var iconPause = root.querySelector('[data-reader-icon-pause]');
+    var stopButton = root.querySelector('[data-reader-stop]');
+    var speedWrap = root.querySelector('[data-reader-speed]');
+    var speedSelect = root.querySelector('[data-reader-speed-select]');
+    var status = root.querySelector('[data-reader-status]');
+
+    var segments = [];
+    var index = 0;
+    var state = 'stopped';
+    var rate = 1;
+    var voice = null;
+    var keepAlive = null;
+
+    function buildSegments() {
+      segments = [];
+      var nodes = content.children;
+      for (var i = 0; i < nodes.length; i++) {
+        var el = nodes[i];
+        var text = (el.textContent || '').replace(/\s+/g, ' ').trim();
+        if (!text) continue;
+        if (el.querySelector('img, video, iframe')) continue;
+        segments.push({ el: el, text: text });
+      }
+    }
+
+    function pickVoice() {
+      var voices = window.speechSynthesis.getVoices();
+      if (!voices.length) return null;
+      var prefs = ['es-ES', 'es-MX', 'es-US', 'es-AR', 'es-CO', 'es'];
+      for (var i = 0; i < prefs.length; i++) {
+        for (var j = 0; j < voices.length; j++) {
+          if (voices[j].lang && voices[j].lang.toLowerCase().startsWith(prefs[i].toLowerCase())) {
+            return voices[j];
+          }
+        }
+      }
+      return null;
+    }
+
+    function setHighlight(i) {
+      for (var s = 0; s < segments.length; s++) {
+        segments[s].el.classList.remove(
+          'bg-surface',
+          'rounded-md',
+          '-mx-1',
+          'px-1'
+        );
+      }
+      if (!segments[i]) return;
+      var el = segments[i].el;
+      el.classList.add('bg-surface', 'rounded-md', '-mx-1', 'px-1');
+      var rect = el.getBoundingClientRect();
+      var viewport = window.innerHeight || document.documentElement.clientHeight;
+      if (rect.top < 0 || rect.bottom > viewport) {
+        el.scrollIntoView({ block: 'center', behavior: 'smooth' });
+      }
+    }
+
+    function clearHighlight() {
+      for (var s = 0; s < segments.length; s++) {
+        segments[s].el.classList.remove(
+          'bg-surface',
+          'rounded-md',
+          '-mx-1',
+          'px-1'
+        );
+      }
+    }
+
+    function speakSegment() {
+      if (state !== 'playing') return;
+      if (index >= segments.length) {
+        finish();
+        return;
+      }
+      var u = new SpeechSynthesisUtterance(segments[index].text);
+      u.lang = 'es-ES';
+      u.rate = rate;
+      if (voice) u.voice = voice;
+      u.onend = function () {
+        index++;
+        speakSegment();
+      };
+      u.onerror = function () {
+        if (state !== 'playing') return;
+        index++;
+        speakSegment();
+      };
+      window.speechSynthesis.speak(u);
+      setHighlight(index);
+      status.textContent = 'Reproduciendo ' + (index + 1) + ' de ' + segments.length;
+    }
+
+    function startKeepAlive() {
+      if (keepAlive) clearInterval(keepAlive);
+      keepAlive = setInterval(function () {
+        if (state === 'playing') {
+          try {
+            window.speechSynthesis.resume();
+          } catch (e) {}
+        }
+      }, 10000);
+    }
+
+    function stopKeepAlive() {
+      if (keepAlive) {
+        clearInterval(keepAlive);
+        keepAlive = null;
+      }
+    }
+
+    function start() {
+      if (!segments.length) buildSegments();
+      if (!segments.length) return;
+      voice = pickVoice();
+      index = 0;
+      state = 'playing';
+      startKeepAlive();
+      speakSegment();
+      updateControls();
+    }
+
+    function pause() {
+      window.speechSynthesis.pause();
+      state = 'paused';
+      stopKeepAlive();
+      updateControls();
+    }
+
+    function resume() {
+      window.speechSynthesis.resume();
+      state = 'playing';
+      startKeepAlive();
+      updateControls();
+    }
+
+    function finish() {
+      clearHighlight();
+      state = 'stopped';
+      index = 0;
+      stopKeepAlive();
+      status.textContent = '';
+      updateControls();
+    }
+
+    function stop() {
+      window.speechSynthesis.cancel();
+      finish();
+    }
+
+    function updateControls() {
+      iconPlay.hidden = state === 'playing';
+      iconPause.hidden = state !== 'playing';
+      toggleLabel.textContent =
+        state === 'stopped' ? 'Escuchar' : state === 'playing' ? 'Pausar' : 'Reanudar';
+      toggle.setAttribute(
+        'aria-label',
+        state === 'stopped'
+          ? 'Escuchar artículo'
+          : state === 'playing'
+            ? 'Pausar lectura'
+            : 'Reanudar lectura'
+      );
+      stopButton.hidden = state === 'stopped';
+      speedWrap.hidden = state === 'stopped';
+    }
+
+    root.hidden = false;
+
+    var voiceTimer = setTimeout(function () {
+      if (!voice) voice = pickVoice();
+    }, 0);
+    if (window.speechSynthesis.onvoiceschanged !== undefined) {
+      window.speechSynthesis.onvoiceschanged = function () {
+        voice = pickVoice();
+        window.clearTimeout(voiceTimer);
+      };
+    }
+
+    toggle.addEventListener('click', function () {
+      if (state === 'stopped') start();
+      else if (state === 'playing') pause();
+      else resume();
+    });
+
+    stopButton.addEventListener('click', stop);
+
+    speedSelect.addEventListener('change', function () {
+      rate = parseFloat(speedSelect.value) || 1;
+    });
+
+    window.addEventListener('beforeunload', function () {
+      window.speechSynthesis.cancel();
+      stopKeepAlive();
+    });
+  })();
+</script>

@@ -4,6 +4,7 @@ import Layout from '../../layouts/Layout.astro';
 import FormattedDate from '../../components/FormattedDate.astro';
 import TagList from '../../components/TagList.astro';
 import ShareLinks from '../../components/ShareLinks.astro';
+import AudioPlayback from '../../components/AudioPlayback.astro';
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
@@ -39,7 +40,9 @@ const { title, description, pubDate, tags } = post.data;
       </div>
     </header>
 
-    <div class="prose mt-10 max-w-none">
+    <AudioPlayback />
+
+    <div id="post-content" class="prose mt-10 max-w-none">
       <Content />
     </div>
 
